@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1 - UP</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="track">
+    <div id="car1vermelho" class="car"></div>
+    <div id="car2verde" class="car"></div>
+    <div id="car3azul" class="car"></div>
+    <div id="car4amarelo" class="car"></div>
+    <div id="car5rosa" class="car"></div>
+  </div>
+
+  <div>
+    <label for="betAmount">Bet amount (R$):</label>
+    <input type="number" id="betAmount" min="5" step="1" value="5">
+  </div>
+
+  <div>
+    <input type="radio" id="car1vermelhoRadio" name="selectedCar" value="1" checked>
+    <label for="car1vermelhoRadio">Car 1</label>
+    <input type="radio" id="car2verdeRadio" name="selectedCar" value="2">
+    <label for="car2verdeRadio">Car 2</label>
+    <input type="radio" id="car3azulRadio" name="selectedCar" value="3">
+    <label for="car3azulRadio">Car 3</label>
+    <input type="radio" id="car4amareloRadio" name="selectedCar" value="4">
+    <label for="car4amareloRadio">Car 4</label>
+    <input type="radio" id="car5rosaRadio" name="selectedCar" value="5">
+    <label for="car5rosaRadio">Car 5</label>
+  </div>
+
+  <div>
+    <button id="placeBet">Place Bet</button>
+  </div>
+
+  <div id="balanceDisplay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
